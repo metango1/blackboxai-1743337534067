@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Email Manager</string>
+    <string name="email_id">Email ID</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="tab_group">Tab Group</string>
+    <string name="tags">Tags</string>
+    <string name="save">Save</string>
+    <string name="error_empty_fields">Please fill in all fields.</string>
+    <string name="error_invalid_email">Please enter a valid email address.</string>
+    
+    <!-- Search screen strings -->
+    <string name="search_hint">Search by email, name, or tag</string>
+    <string name="no_results_found">No results found</string>
+    <string name="search_error">Error performing search</string>
+    
+    <!-- Settings screen strings -->
+    <string name="app_settings">App Settings</string>
+    <string name="database">Database</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="notifications">Notifications</string>
+    <string name="clear_data">Clear All Data</string>
+    <string name="clear_data_title">Clear Data</string>
+    <string name="clear_data_message">Are you sure you want to delete all email data? This cannot be undone.</string>
+    <string name="data_cleared_success">All data has been cleared</string>
+    <string name="cancel">Cancel</string>
+</resources>
