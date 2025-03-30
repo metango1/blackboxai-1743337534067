@@ -24,4 +24,13 @@
     <string name="clear_data_message">Are you sure you want to delete all email data? This cannot be undone.</string>
     <string name="data_cleared_success">All data has been cleared</string>
     <string name="cancel">Cancel</string>
+    
+    <!-- Backup/Restore -->
+    <string name="backup_restore">Backup &amp; Restore</string>
+    <string name="backup">Backup Data</string>
+    <string name="restore">Restore Data</string>
+    <string name="backup_success">Backup completed successfully</string>
+    <string name="restore_success">Restore completed successfully</string>
+    <string name="backup_failed">Backup failed</string>
+    <string name="restore_failed">Restore failed</string>
 </resources>
