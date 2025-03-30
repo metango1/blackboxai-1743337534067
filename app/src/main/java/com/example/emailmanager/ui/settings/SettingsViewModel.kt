@@ -69,6 +69,42 @@ class SettingsViewModel @Inject constructor(
             operationError = null
         )
     }
+
+    fun backupData(file: File) {
+        viewModelScope.launch {
+            _uiState.value = _uiState.value.copy(isLoading = true)
+            try {
+                val success = repository.backupDatabase(file)
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    operationError = if (!success) "Backup failed" else null
+                )
+            } catch (e: Exception) {
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    operationError = "Backup error: ${e.message}"
+                )
+            }
+        }
+    }
+
+    fun restoreData(file: File) {
+        viewModelScope.launch {
+            _uiState.value = _uiState.value.copy(isLoading = true)
+            try {
+                val success = repository.restoreDatabase(file)
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    operationError = if (!success) "Restore failed" else null
+                )
+            } catch (e: Exception) {
+                _uiState.value = _uiState.value.copy(
+                    isLoading = false,
+                    operationError = "Restore error: ${e.message}"
+                )
+            }
+        }
+    }
 }
 
 data class SettingsUiState(
